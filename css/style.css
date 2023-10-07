@@ -1,0 +1,481 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@100&family=Ribeye+Marrow&family=Roboto:wght@300&display=swap');
+
+body {
+    margin: 0; /*Zorgt ervoor dat er geen ongewone margins ontstaan*/
+}
+
+/*Tekst stijlen met fonts en grootte*/
+h1 {
+    font-family: 'Ribeye Marrow', cursive;
+    font-size: 2rem;
+}
+h2 {
+    font-family: 'Ribeye Marrow', cursive;
+    font-size: 1.5rem;
+}
+h3 {
+    font-family: 'Ribeye Marrow', cursive;
+    font-size: 1.3rem;
+}
+a {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+nav a {
+    font-family: 'Bebas Neue', sans-serif;
+    font-size: 1rem;
+}
+button {
+    font-family: 'Bebas Neue', sans-serif;  
+}
+p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 1rem;
+}
+.highlightText {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1rem;
+}
+form {
+    font-family: 'Roboto', sans-serif; 
+    font-size: 1rem;
+}
+
+
+
+/*Alles voor de navigatie balk*/
+
+#topNav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5vw 1.75vw 1vw 1.75vw;
+    background-color: rgb(62, 62, 62);
+}
+#topNav img {
+    width: 120px;
+    height: 50px;
+    background-color: rgb(255, 255, 255);
+    border: .3vw solid yellow;
+    border-radius: 30px 0 30px 0 ; /*Zo blijft het logo altijd even groot*/ 
+}
+nav {
+    display: flex;
+    flex-direction: row;
+}
+nav a {
+    background-color: rgb(62, 62, 62);
+    padding: .6vh .8vw;
+    margin-left: 3vw;
+    text-decoration: none;
+    color: yellow;
+    border-radius: .8vw;
+    transform-origin:center;
+    transition: all .5s ease;
+}
+nav a:hover {
+    background-color: rgb(0, 0, 0);
+    padding: .6vh .8vw;
+    margin-left: 3vw;
+    text-decoration: none;
+    color: yellow;
+    border-radius: .8vw;
+    box-shadow: .6vh .6vw .8vw rgb(0 0 0 / 0.9);
+    transform:scale(1.2); 
+}
+
+
+
+/*Alles voor de header*/
+
+#welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 100vw;
+    background-image: url("../images/adrien-olichon-ilVYjf0J378-unsplash.jpg");
+    height: 80vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    color: rgb(237, 237, 43);
+    
+}
+#welcome p {
+padding: 0 10vw 0 10vw;
+}
+.highlightText {
+    font-weight: bolder;
+    color: yellow;
+}
+#welcome div {
+    display: flex;
+    flex-direction: row;
+    gap: 10vw;
+    padding-top: 1vw;
+}
+#welcome a {
+    text-decoration: none;
+    color: rgb(237, 237, 43);
+    padding: 1vh 2vw;
+    background-color: black;
+    border: .3vw solid white;
+    border-radius: .8vw;
+}
+#welcome a:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    padding: 1vh 2w;
+    background-color: rgb(237, 237, 43);
+    border: .3vw solid white;
+    border-radius: .8vw;
+}
+
+
+ /*Alles van de contentcontainer*/
+
+#contentContainer {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: antiquewhite;
+    padding-bottom: 10vw;
+}
+#contentContainer h2 {
+    padding-top: 2vw;
+    padding-bottom: 1vw;
+    display: flex;
+    justify-content: center;
+}
+#contentSection {
+    padding-top: 2vh;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex: 1;
+    gap: 1.7vw;
+    padding-left: 1.5vw;
+    padding-right: 1.5vw;
+}
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: .3vw solid black;
+    padding-top: 1vw ;
+    transform: skewY(2deg);
+    background-color: darkgrey;
+    border-radius: 5px;
+    box-shadow: .6vh .6vw .8vw rgb(0 0 0 / 0.9);
+}
+#contentSection h3{
+    display: flex;
+    text-align: center;
+}
+.content img {
+    width: 75%;
+}
+.content a {
+    text-decoration: none;
+    color: black;
+    padding-bottom: .5vw;
+}
+.content span{
+    color: gold;
+}
+.text {
+    padding: 0 1vw;
+    display: flex;
+    text-align: center;
+}
+
+
+/*Alles van de form*/
+
+#form h2 {
+    margin: 0;
+    padding-top: 5vw;  
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-bottom: 2vw;
+    font-family: 'Bebas Neue', sans-serif;
+}
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 3vh;
+}
+form p {
+    margin: 0;
+}
+form{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-content: flex-start;
+    width: 60vw;
+    gap: 1vw;
+}
+.shared {
+    display: flex;
+    flex-direction: row;
+    gap: 1vw;
+}
+.fs {
+    display: flex;
+    flex-direction: column;
+}
+.fsame {
+    display: flex;
+    flex-direction: column;
+}
+.fsame input {
+    width: 29.06vw;
+}
+#comments {
+    display: flex;
+    align-content: flex-start;
+    height: 10vh;
+}
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 10vw;
+    background-color: antiquewhite;
+    color: black;
+    cursor: pointer;
+    border-radius: .5vw;
+}
+button:hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: center;
+    width: 10vw;
+    background-color: rgb(0, 0, 0);
+    color: rgb(248, 248, 248);
+    cursor: pointer;
+    border-radius: .5vw;
+}
+
+
+/*alles van de footer*/
+footer {
+    background-color: rgb(62, 62, 62);
+    color: rgb(237, 237, 43);
+    display: flex;
+    flex-direction: column;
+    padding: 1vw 3vw;
+}
+footer p{
+    margin: 0;
+}
+footer img {
+    padding-top: 1vw;
+    width: 3vw;
+}
+#logofooter {
+    padding-top: 0;
+    width: 10vw;
+    margin-left: -.9vw;
+}
+#footersections {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+footer a {
+    text-decoration: none;
+    color: rgb(237, 237, 43);
+}
+
+
+    /*background pic gaat kleiner als px<630*/
+
+/*Mobiel media*/
+@media screen and (max-width: 630px) {
+    body {
+        width: fit-content; /*Zorgt ervoor dat alles past*/
+    }
+
+    /*Navigatie mobiel*/
+    #topNav {
+      display: flex;
+      flex-direction: column;
+      padding-bottom: 3vw;
+    }
+    #topNav img {
+        border: .9vw solid yellow;
+    }
+    nav {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        padding-top: .6vh;
+        gap: .6vh;
+    }
+    nav a{
+        margin: 0;
+        padding: .6vh 30vw;
+        background-color: antiquewhite;
+        border-radius: 1vw;
+        color: black;
+    }
+    nav a:hover {
+        transition: none;
+        box-shadow: none;
+        transform: none; 
+        display: flex;
+        justify-content: center;
+    }
+
+    /*Header mobiel*/
+    header{
+        display: flex;
+        flex-direction: column;
+    }
+    #welcome  div{
+        display: flex;
+        flex-direction: row;
+        gap: 3vw;
+    }
+
+    /*Main section Mobiel*/
+    main {
+        display: flex;
+        flex-direction: column;
+    }
+    /*Content mobiel*/
+    #contentContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #contentSection {
+        display: flex;
+        flex-direction: column;
+        padding-right: 2vw;
+        width: 80vw;
+    }
+    .content {
+        border: .7vw solid black;
+    }
+    .content img {
+        padding-top: 2vw;
+    }
+
+    /*Form mobiel*/
+    form {
+        padding-top: 2vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: start;
+        width: 80vw;
+        flex: 1;
+        gap: 2vh;
+    }
+    .shared{
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    .fsame input {
+        width: 75vw;
+    }
+    .fs input {
+        width: 75vw;
+    }
+    #check {
+        
+        width: 65vw;
+        display: flex;
+        flex-direction: row;
+    }
+    button {
+        padding: 1vh 7vw;
+        border-radius: 2vw;
+    }
+    button:hover {
+        padding: 1vh 7vw;
+        border-radius: 2vw;
+    }
+
+    /*Footer mobiel*/
+    footer {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 2vh;
+        padding-bottom: 2vh;
+    }
+    #footersections{
+        flex-direction: column;
+        align-items: start;
+        gap: 2vh;
+    }
+    #nonesense {
+        display: flex;
+        flex-direction: column;
+        gap: 2vh;
+    }
+    #logofooter {
+        width: 40vw;
+        margin-left: -4vw;
+        margin-bottom: -2vh;
+    }
+    footer img {
+        width: 10vw;
+    }
+
+
+    h1 {
+        font-family: 'Ribeye Marrow', cursive;
+        font-size: 1.6rem;
+    }
+    h2 {
+        font-family: 'Ribeye Marrow', cursive;
+        font-size: 1.2rem;
+    }
+    h3 {
+        font-family: 'Ribeye Marrow', cursive;
+        font-size: 1rem;
+    }
+    a {
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1rem;
+    }
+    nav a {
+        font-family: 'Bebas Neue', sans-serif;
+        font-size: 1rem;
+    }
+    button {
+        font-family: 'Bebas Neue', sans-serif;  
+    }
+    p {
+        font-family: 'Roboto', sans-serif;
+        font-size: 1rem;
+    }
+    .highlightText {
+        font-family: 'Roboto', sans-serif; 
+        font-size: 1rem;
+    }
+    form {
+        font-family: 'Roboto', sans-serif; 
+        font-size: 1rem;
+    }
+} 
+
+
